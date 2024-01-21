@@ -20,5 +20,8 @@ read.on('line', (answer) => {
   }
   fs.promises
     .appendFile(path.resolve(__dirname, '02-write-file.txt'), `${answer}\n`)
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err)
+      process.exit()
+    });
 });
