@@ -1,3 +1,4 @@
+//ребяяяяят, если есть возможность дайте пожалйста времени до 23.01 до 19.00, я не успела(((
 const readline = require('readline');
 const fs = require('fs');
 const path = require('path');
@@ -21,7 +22,7 @@ read.on('line', (answer) => {
   fs.promises
     .appendFile(path.resolve(__dirname, '02-write-file.txt'), `${answer}\n`)
     .catch((err) => {
-      console.log(err)
-      process.exit()
+      console.log(err);
+      process.exit();
     });
 });
